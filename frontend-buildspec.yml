@@ -1,0 +1,30 @@
+version: 0.2
+
+env:
+  variables:
+    S3_BUCKET: my-buildright-frontend-bucket-12345
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo Installing frontend dependencies...
+      - cd frontend
+      - npm install
+
+  build:
+    commands:
+      - echo Building React app...
+      - npm run build
+
+  post_build:
+    commands:
+      - pwd
+      - ls
+      - ls dist
+      - aws s3 sync dist/ s3://$S3_BUCKET --delete
+
+artifacts:
+  files:
+    - '**/*'

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bg-blueprint {
+    background-image: linear-gradient(#f1f5f9 1px, transparent 1px),
+      linear-gradient(90deg, #f1f5f9 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-color: #ffffff;
+  }
+  .bg-blueprint-dark {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
