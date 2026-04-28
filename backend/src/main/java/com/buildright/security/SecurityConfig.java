@@ -67,8 +67,7 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
                 "http://127.0.0.1:5173",
-                "http://my-buildright-frontend-bucket-12345.s3-website.ap-south-1.amazonaws.com",
-                "*"
+                "http://snehal-buildright-frontend-bucket-12345.s3-website.ap-south-1.amazonaws.com"
         ));
 
         configuration.setAllowedMethods(List.of(
