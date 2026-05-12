@@ -1,84 +1,132 @@
-# BuildRight
+# 🏗️ BuildRight
 
-BuildRight is a full-stack, cloud-enabled web application designed for managing architectural projects, plans, galleries, and client inquiries with a modern admin dashboard and a scalable CI/CD pipeline using AWS services.
+<div align="center">
 
-The platform enables architecture and construction businesses to showcase projects, manage content efficiently, and streamline deployment using containerization and Infrastructure as Code (IaC).
+![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
+![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green?style=for-the-badge&logo=springboot)
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge&logo=amazonaws)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-purple?style=for-the-badge&logo=terraform)
+![Docker](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker)
 
----
+### 🚀 Full-Stack Cloud-Native Architecture Management Platform
 
-# Features
+BuildRight is a cloud-enabled full-stack web application for managing architectural projects, galleries, plans, and client inquiries with a secure admin dashboard and scalable AWS infrastructure.
 
-## User Features
-- Browse architectural projects and galleries
-- View project details and plans
-- Contact/inquiry form for clients
-- Responsive modern UI
-
-## Admin Features
-- Secure admin authentication using JWT
-- Manage projects, gallery items, and plans
-- Upload and manage media files
-- Dashboard-based content management
-
-## Cloud & DevOps Features
-- Dockerized frontend and backend
-- CI/CD pipeline using AWS CodePipeline & CodeBuild
-- Infrastructure provisioning using Terraform
-- AWS deployment with:
-  - EC2
-  - RDS
-  - S3
-  - Application Load Balancer (ALB)
-  - IAM
-  - VPC & Security Groups
+</div>
 
 ---
 
-# Tech Stack
+# ✨ Features
 
-## Frontend
-- React
-- Vite
-- Nginx
-- Axios
-- HTML/CSS/JavaScript
-
-## Backend
-- Java Spring Boot
-- Spring Security
-- JWT Authentication
-- Maven
-- REST APIs
-
-## Database
-- MySQL / AWS RDS
-
-## DevOps & Cloud
-- Docker
-- Terraform
-- AWS EC2
-- AWS S3
-- AWS RDS
-- AWS ALB
-- AWS IAM
-- AWS CodeBuild
-- AWS CodePipeline
+- 🔐 JWT-based Authentication
+- 🏢 Project & Gallery Management
+- 📩 Client Inquiry System
+- 📱 Responsive UI
+- 🐳 Dockerized Deployment
+- ☁️ AWS Cloud Infrastructure
+- ⚡ CI/CD using CodePipeline & CodeBuild
+- 🏗️ Infrastructure as Code with Terraform
 
 ---
 
-# Project Structure
+# 🛠️ Tech Stack
+
+| Frontend | Backend | Cloud & DevOps | Database |
+|----------|----------|----------------|-----------|
+| React + Vite | Spring Boot | AWS | MySQL |
+| Nginx | Spring Security | Docker | AWS RDS |
+| Axios | JWT Auth | Terraform |  |
+
+---
+
+# 🏗️ Architecture
+
+```text
+User → ALB → EC2 (Docker Containers)
+                 ├── Frontend (React + Nginx)
+                 └── Backend (Spring Boot API)
+                           │
+                           ├── AWS RDS
+                           └── AWS S3
+```
+
+📌 Architecture Diagram:
+
+```text
+docs/BuildRight_Arch_Diag.png
+```
+
+---
+
+# 📂 Project Structure
 
 ```text
 BuildRight/
-│
-├── backend/                  # Spring Boot backend
-├── frontend/                 # React frontend
-├── terraform/                # Infrastructure as Code
-├── scripts/                  # Deployment scripts
-├── docs/                     # Architecture diagrams/docs
-│
-├── appspec.yml
-├── backend-buildspec.yml
-├── frontend-buildspec.yml
-│
-└── README.md
+├── backend/       # Spring Boot Backend
+├── frontend/      # React Frontend
+├── terraform/     # AWS Infrastructure
+├── scripts/       # Deployment Scripts
+└── docs/          # Architecture Diagram
+```
+
+---
+
+# ⚙️ Local Setup
+
+## Backend
+
+```bash
+cd backend
+./mvnw spring-boot:run
+```
+
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+# ☁️ Terraform Setup
+
+```bash
+cd terraform
+
+terraform init
+terraform plan
+terraform apply
+```
+
+---
+
+# 🔄 CI/CD
+
+AWS services used:
+- CodePipeline
+- CodeBuild
+- EC2
+- S3
+
+Buildspec files:
+- `backend-buildspec.yml`
+- `frontend-buildspec.yml`
+
+---
+
+# 🔐 Security
+
+- JWT Authentication
+- Spring Security
+- IAM Roles
+- VPC & Security Groups
+
+---
+
+<div align="center">
+
+⭐ Star this repository if you like the project ⭐
+
+</div>
