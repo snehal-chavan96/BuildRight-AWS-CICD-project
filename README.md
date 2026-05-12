@@ -6,7 +6,6 @@
 ![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green?style=for-the-badge&logo=springboot)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge&logo=amazonaws)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-purple?style=for-the-badge&logo=terraform)
-![Docker](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker)
 
 ### 🚀 Full-Stack Cloud-Native Architecture Management Platform
 
