@@ -1,7 +1,5 @@
 # 🏗️ BuildRight
 
-<div align="center">
-
 ![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
 ![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green?style=for-the-badge&logo=springboot)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge&logo=amazonaws)
@@ -11,7 +9,6 @@
 
 BuildRight is a cloud-enabled full-stack web application for managing architectural projects, galleries, plans, and client inquiries with a secure admin dashboard and scalable AWS infrastructure.
 
-</div>
 
 ---
 
