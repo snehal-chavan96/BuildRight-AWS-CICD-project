@@ -1,0 +1,11 @@
+region           = "ap-south-1"
+project_name     = "buildright-app"
+bucket_name      = "snehal-buildright-frontend-bucket-12345"
+instance_type    = "t3.micro"
+min_size         = 1
+desired_capacity = 1
+max_size         = 2
+db_name          = "buildright"
+db_username      = "admin"
+db_password      = "admin1234"
+my_ip            = "103.185.160.241/32"
