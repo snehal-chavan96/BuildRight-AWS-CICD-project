@@ -21,7 +21,6 @@ BuildRight is a cloud-enabled full-stack web application for managing architectu
 - 🏢 Project & Gallery Management
 - 📩 Client Inquiry System
 - 📱 Responsive UI
-- 🐳 Dockerized Deployment
 - ☁️ AWS Cloud Infrastructure
 - ⚡ CI/CD using CodePipeline & CodeBuild
 - 🏗️ Infrastructure as Code with Terraform
@@ -41,7 +40,7 @@ BuildRight is a cloud-enabled full-stack web application for managing architectu
 # 🏗️ Architecture
 
 ```text
-User → ALB → EC2 (Docker Containers)
+User → ALB → EC2 
                  ├── Frontend (React + Nginx)
                  └── Backend (Spring Boot API)
                            │
@@ -124,8 +123,6 @@ Buildspec files:
 
 ---
 
-<div align="center">
+# 📄 License
 
-⭐ Star this repository if you like the project ⭐
-
-</div>
+This project is licensed under the MIT License.
