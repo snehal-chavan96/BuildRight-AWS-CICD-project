@@ -47,6 +47,7 @@ User → ALB → EC2
 
 📌 Architecture Diagram:
 
+![Architecture Diagram](docs/BuildRight_Arch_Diag.png)
 ```text
 docs/BuildRight_Arch_Diag.png
 ```
